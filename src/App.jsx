@@ -15,7 +15,7 @@ function App() {
   const { currentTheme } = useTheme();
 
   return (
-    <Router>
+    <Router basename="/web-portfolio">
       <ScrollToTop />
       <div
         className={`${currentTheme.bg} ${currentTheme.text} min-h-screen transition-colors duration-1000`}>
