@@ -7,7 +7,7 @@ import { scrollToSection } from "../utils/ScrollToSection";
 /* =======================
    NAV BUTTON
 ======================= */
-const NavButton = ({ target, children, className = "" }) => {
+const NavButton = ({ target, children, className, style }) => {
   const { currentTheme } = useTheme();
   const location = useLocation();
   const navigate = useNavigate();
@@ -28,7 +28,7 @@ const NavButton = ({ target, children, className = "" }) => {
       type="button"
       onClick={handleClick}
       className={`
-        px-3 py-2 rounded-lg transition-colors duration-300 hover:opacity-80
+        px-3 py-2 rounded-lg transition-colors duration-300 hover:opacity-80 cursor-pointer
         ${
           currentTheme.text === "text-gray-100"
             ? "text-gray-100"
@@ -41,9 +41,6 @@ const NavButton = ({ target, children, className = "" }) => {
   );
 };
 
-/* =======================
-   NAVBAR
-======================= */
 const Navbar = () => {
   const { currentTheme } = useTheme();
   const location = useLocation();
@@ -72,7 +69,6 @@ const Navbar = () => {
           Kadek Liantini
         </button>
 
-        {/* MENU */}
         <div className="hidden md:flex space-x-4 items-center">
           <NavButton target="skills">Skills</NavButton>
           <NavButton target="projects">Projects</NavButton>
