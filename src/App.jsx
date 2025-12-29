@@ -17,6 +17,7 @@ function App() {
   return (
     <Router basename="/web-portfolio">
       <ScrollToTop />
+
       <div
         className={`${currentTheme.bg} ${currentTheme.text} min-h-screen transition-colors duration-1000`}>
         <Navbar />
@@ -31,15 +32,19 @@ function App() {
                   <section id="home">
                     <Home />
                   </section>
+
                   <section id="skills" className="py-16">
                     <Skills />
                   </section>
+
                   <section id="projects" className="py-16">
                     <Projects />
                   </section>
+
                   <section id="article" className="py-16">
                     <Article />
                   </section>
+
                   <section id="contact" className="py-16">
                     <Contact />
                   </section>
