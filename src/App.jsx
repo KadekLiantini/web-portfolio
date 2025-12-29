@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
@@ -10,12 +10,28 @@ import KeputusanTeknis from "./artikel/KeputusanTeknis";
 import Contact from "./components/Contact";
 import ScrollToTop from "./components/ScrollToTop";
 import { useTheme } from "./context/ThemeContext";
+import { useEffect } from "react";
 
 function App() {
   const { currentTheme } = useTheme();
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      const home = document.getElementById("home");
+      if (home) {
+        const navbarHeight = 64;
+        const y =
+          home.getBoundingClientRect().top + window.scrollY - navbarHeight;
+
+        window.scrollTo({ top: y, behavior: "auto" });
+      }
+    }, 100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
-    <Router basename="/web-portfolio">
+    <Router>
       <ScrollToTop />
 
       <div
