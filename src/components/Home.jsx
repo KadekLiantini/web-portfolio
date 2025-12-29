@@ -9,32 +9,23 @@ const Home = () => {
   return (
     <header className="flex flex-col-reverse md:flex-row items-center justify-between min-h-[80vh] pt-16">
       <div className="md:w-3/5 space-y-6 mt-10 md:mt-0">
-        <h1 className="text-5xl md:text-7xl font-extrabold leading-tight">
+        <h1 className="text-5xl md:text-6xl font-extrabold leading-tight">
           Hi Aku Lian, Seorang Mahasiswa IT
         </h1>
         <p className="text-lg md:text-xl opacity-80">
           Saat ini menempuh studi Sarjana Terapan Teknologi Rekayasa Perangkat
-          Lunak di Politeknik Negeri Bali. Saya fokus pada pengembangan{" "}
-          <span className={`font-bold ${currentTheme.text}`}>
-            Antarmuka Pengguna (UI)
-          </span>{" "}
-          yang interaktif dan efisien.
+          Lunak di Politeknik Negeri Bali.
         </p>
         <p
           className={`text-base font-medium border-l-4 pl-4 py-2 ${currentTheme.border}`}>
-          Website Portfolio Mengubah data cuaca kompleks menjadi pengalaman web
-          yang intuitif dan adaptif.
+          Website Portfolio Mengubah data cuaca menjadi pengalaman web yang
+          intuitif dan adaptif.
         </p>
         <div className="flex space-x-4 pt-4">
           <a
-            href="#projects"
-            className={`py-3 px-6 rounded-lg font-semibold text-white ${currentTheme.primary} transition duration-300 transform hover:scale-105`}>
-            Proyek Terbaru
-          </a>
-          <a
             href="link-ke-cv-anda.pdf"
             download
-            className={`py-3 px-6 rounded-lg font-semibold border ${currentTheme.border} ${currentTheme.text} transition duration-300 hover:opacity-80`}>
+            className={`py-3 px-6 rounded-lg font-semibold text-white ${currentTheme.primary} transition duration-300 transform hover:scale-105`}>
             Unduh CV
           </a>
         </div>

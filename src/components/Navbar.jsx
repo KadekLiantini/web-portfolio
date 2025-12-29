@@ -36,9 +36,6 @@ const NavButton = ({ target, children, onClick }) => {
   );
 };
 
-/* =======================
-   NAVBAR
-======================= */
 const Navbar = () => {
   const { currentTheme } = useTheme();
   const location = useLocation();

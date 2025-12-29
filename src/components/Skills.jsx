@@ -24,39 +24,38 @@ const Skills = () => {
   return (
     <section className="mt-8">
       <h2 className="text-4xl font-extrabold mb-12 text-center">
-        Tech Stack & Keahlian Saya
+        Keahlian Saya
       </h2>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <SkillCard
-          title="React Ecosystem"
-          stack="React.js, Hooks, Context API / Redux Toolkit, React Router, Vite Build Tool."
+          title="Landing Page"
+          stack="HTML, CSS, JavaScript, TailwindCSS, dan Bootstrapt."
         />
 
         <SkillCard
-          title="Styling & Responsif"
-          stack="Tailwind CSS, PostCSS, Framer Motion (untuk animasi interaktif), Design System, Mobile-First Approach."
+          title="Styling dan Responsif"
+          stack="Tailwind CSS, Figma, Design System, Mobile-First Approach."
         />
 
         <SkillCard
           title="Dasar Pemrograman"
-          //icon="💻"
-          stack="JavaScript (ES6+), TypeScript (Dasar), Python (untuk tugas backend/scripting), Struktur Data & Algoritma."
+          stack="JavaScript, Java, Struktur Data & Algoritma."
         />
 
         <SkillCard
           title="Version Control"
-          stack="Git, GitHub, Workflow Branching (Git Flow), Pull Requests dan Code Review."
-        />
-
-        <SkillCard
-          title="Pengembangan API"
-          stack="Konsumsi REST API (Axios/Fetch), Pemahaman dasar GraphQL, Mocking API dengan JSON Server."
+          stack="Git, GitHub, Pull Requests dan Code Review."
         />
 
         <SkillCard
           title="Soft Skills IT"
-          stack="Agile Scrum, Problem Solving, Dokumentasi Teknis, Kolaborasi Tim menggunakan Figma."
+          stack="Problem Solving dan Kolaborasi Tim menggunakan Figma."
+        />
+
+        <SkillCard
+          title="Crochet"
+          stack="Amigurumi, Keychain, Bag, dan Headband."
         />
       </div>
     </section>

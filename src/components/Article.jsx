@@ -1,22 +1,10 @@
-// src/components/Projects.jsx
-
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import { Link } from "react-router-dom";
 
-// Import gambar-gambar placeholder Anda di sini:
-import Project1Image from "../assets/ai-photo.jpg";
-// import Project2Image from '../assets/project2-ss.png';
-// import Project3Image from '../assets/project3-ss.png';
+import Project1Image from "../assets/cover-manajemen-resiko.png";
 
-const ArticleCard = ({
-  title,
-  desc,
-  stack,
-  articleLink,
-  codeLink,
-  imageUrl,
-}) => {
+const ArticleCard = ({ title, desc, stack, articleLink, imageUrl }) => {
   const { currentTheme } = useTheme();
 
   return (
@@ -48,22 +36,7 @@ const ArticleCard = ({
           ))}
         </div>
 
-        <div className="flex space-x-4">
-          {/* <a
-            href={demoLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`text-sm font-semibold py-2 px-4 rounded-lg border ${currentTheme.border} ${currentTheme.text} transition duration-300 hover:opacity-70`}>
-            Demo Live
-          </a> */}
-          {/* <a
-            href={codeLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`text-sm font-semibold py-2 px-4 rounded-lg text-white ${currentTheme.primary} transition duration-300 hover:bg-opacity-80`}>
-            Source Code
-          </a> */}
-        </div>
+        <div className="flex space-x-4"></div>
       </div>
     </Link>
   );
@@ -73,27 +46,15 @@ const Article = () => {
   const articleList = [
     {
       title: "Mempertimbangkan Konsekuensi dari Keputusan Teknis",
-      desc: "Portofolio interaktif yang menggunakan API cuaca untuk mengubah skema warna tema secara *real-time* menggunakan React dan Tailwind CSS.",
-      stack: ["React", "Tailwind CSS", "OpenWeatherMap API", "Context API"],
+      desc: "Di balik setiap sistem, ada keputusan teknis yang membawa konsekuensi besar dan satu keputusan teknis dapat melindungi sistem, atau justru menghancurkannya.",
+      stack: [
+        "Analisis Resiko",
+        "Keputusan Teknis",
+        "Aspek Sosial & Etis",
+        "Studi Kasus",
+      ],
       articleLink: "/artikel/KeputusanTeknis",
-      codeLink: "Link-GitHub-Proyek-Ini",
       imageUrl: Project1Image,
-    },
-    {
-      title: "E-Commerce Mockup",
-      desc: "Implementasi keranjang belanja dan *state management* produk kompleks menggunakan Redux Toolkit dan Async Thunks untuk simulasi API.",
-      stack: ["React", "Redux Toolkit", "TypeScript", "SCSS"],
-      articleLink: "Link-Demo-E-commerce",
-      codeLink: "Link-GitHub-E-commerce",
-      imageUrl: "https://via.placeholder.com/400x200?text=Ecommerce+Mockup+SS",
-    },
-    {
-      title: "Sistem Manajemen Tugas Kampus",
-      desc: "Aplikasi CRUD (Create, Read, Update, Delete) sederhana untuk melacak tugas kuliah dan deadline, dibangun dengan MERN stack dasar.",
-      stack: ["MERN Stack", "Express.js", "MongoDB", "Auth JWT"],
-      articleLink: "Link-Demo-Sistem-Tugas",
-      codeLink: "Link-GitHub-Sistem-Tugas",
-      imageUrl: "https://via.placeholder.com/400x200?text=Todo+App+SS", // <-- Ganti dengan import Project3Image
     },
   ];
 

@@ -1,14 +1,14 @@
-// src/components/Projects.jsx
-
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 
-// Import gambar-gambar placeholder Anda di sini:
-import Project1Image from "../assets/ai-photo.jpg";
-// import Project2Image from '../assets/project2-ss.png';
-// import Project3Image from '../assets/project3-ss.png';
+import Project1Image from "../assets/1.png";
+import Project2Image from "../assets/2.png";
+import Project3Image from "../assets/3.png";
+import Project4Image from "../assets/4.png";
+import Project5Image from "../assets/5.png";
+import Project6Image from "../assets/6.png";
+import Project7Image from "../assets/7.png";
 
-// --- Komponen ProjectCard (Diperbarui) ---
 const ProjectCard = ({ title, desc, stack, demoLink, codeLink, imageUrl }) => {
   const { currentTheme } = useTheme();
 
@@ -21,7 +21,7 @@ const ProjectCard = ({ title, desc, stack, demoLink, codeLink, imageUrl }) => {
           <img
             src={imageUrl}
             alt={`Screenshot ${title}`}
-            className="w-full h-70 object-cover transition-transform duration-500 group-hover:scale-105"
+            className="w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </div>
       )}
@@ -69,27 +69,60 @@ const Projects = () => {
   const projectList = [
     {
       title: "Weather Theme Portfolio (Saat Ini)",
-      desc: "Portofolio interaktif yang menggunakan API cuaca untuk mengubah skema warna tema secara *real-time* menggunakan React dan Tailwind CSS.",
-      stack: ["React", "Tailwind CSS", "OpenWeatherMap API", "Context API"],
-      demoLink: "#",
-      codeLink: "Link-GitHub-Proyek-Ini",
-      imageUrl: Project1Image, // <-- Ganti dengan import Project1Image
+      desc: "Portofolio interaktif yang menggunakan API cuaca untuk mengubah skema warna tema secara menggunakan React dan Tailwind CSS.",
+      stack: ["React", "Tailwind CSS", "OpenWeatherMap API"],
+      demoLink: "https://kadekliantini.github.io/web-portfolio/",
+      codeLink: "https://github.com/KadekLiantini/web-portfolio.git",
+      imageUrl: Project1Image,
     },
     {
-      title: "E-Commerce Mockup",
-      desc: "Implementasi keranjang belanja dan *state management* produk kompleks menggunakan Redux Toolkit dan Async Thunks untuk simulasi API.",
-      stack: ["React", "Redux Toolkit", "TypeScript", "SCSS"],
-      demoLink: "Link-Demo-E-commerce",
-      codeLink: "Link-GitHub-E-commerce",
-      imageUrl: "https://via.placeholder.com/400x200?text=Ecommerce+Mockup+SS", // <-- Ganti dengan import Project2Image
+      title: "Pokemon API",
+      desc: "Implementasi API pokemon. Menampilkan list pokemon berdasarkan id dan nama. Menambahkan fitur pencarian dan perncarian secara acak.",
+      stack: ["React", "Axios", "Tailwind CSS", "Vite"],
+      demoLink: "https://kadekliantini.github.io/project-react-2/",
+      codeLink: "https://github.com/KadekLiantini/project-react-2.git",
+      imageUrl: Project2Image,
     },
     {
-      title: "Sistem Manajemen Tugas Kampus",
-      desc: "Aplikasi CRUD (Create, Read, Update, Delete) sederhana untuk melacak tugas kuliah dan deadline, dibangun dengan MERN stack dasar.",
-      stack: ["MERN Stack", "Express.js", "MongoDB", "Auth JWT"],
-      demoLink: "Link-Demo-Sistem-Tugas",
-      codeLink: "Link-GitHub-Sistem-Tugas",
-      imageUrl: "https://via.placeholder.com/400x200?text=Todo+App+SS", // <-- Ganti dengan import Project3Image
+      title: "Website Resep Masakan dan Minuman",
+      desc: "Website implementasi data dummy mengenai resep masakan dan minuman. Pemfilteran sesuai dengan kategori yaitu semua, makanan, dan minuman",
+      stack: ["React", "Tailwind CSS"],
+      demoLink: "https://kadekliantini.github.io/project-react-1/",
+      codeLink: "https://github.com/KadekLiantini/project-react-1.git",
+      imageUrl: Project3Image,
+    },
+    {
+      title: "BMI Calculator",
+      desc: "Website sederhana untuk menghitung Body Mass Index(BMI). Dilengkapi dengan dark dan light mode serta artikel singkat mengenai apa itu BMI.",
+      stack: ["HTML", "CSS", "JavaScript", "JQuery"],
+      demoLink:
+        "https://bmi-calculator-kn48yu5wa-ni-kadek-liantinis-projects.vercel.app/",
+      codeLink: "https://github.com/KadekLiantini/bmi-calculator.git",
+      imageUrl: Project4Image,
+    },
+    {
+      title: "Website Portfolio Bootstrap",
+      desc: "Website portfolio sederhana dengan menggunakan framework frontend Bootstrap.",
+      stack: ["Bootstrap"],
+      demoLink: "https://github.com/KadekLiantini/portfolio-bootstrap.git",
+      codeLink: "https://kadekliantini.github.io/portfolio-bootstrap/",
+      imageUrl: Project5Image,
+    },
+    {
+      title: "Website Villa",
+      desc: "Website profil villa yang berisi sistem booking atau page admin",
+      stack: ["HTML", "CSS", "JAvaScript", "PHP", "PhpMyAdmin"],
+      demoLink: "https://kadekliantini.github.io/new/",
+      codeLink: "https://github.com/KadekLiantini/new.git",
+      imageUrl: Project6Image,
+    },
+    {
+      title: "Website Portfolio",
+      desc: "Website portfolio sederhana dengan desain sederhana dan warna yang lembut.",
+      stack: ["HTML", "CSS", "JavaScript"],
+      demoLink: "https://lian-portfolio.netlify.app/",
+      codeLink: "https://github.com/KadekLiantini/portfolio-web.git",
+      imageUrl: Project7Image,
     },
   ];
 
