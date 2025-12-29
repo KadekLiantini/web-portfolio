@@ -17,27 +17,27 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-center gap-8">
           <a
-            href="LINK_LINKEDIN_ANDA"
+            href="https://www.linkedin.com/in/ni-kadek-liantini?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
             target="_blank"
-            rel="noopener noreferrer"
+            rel=""
             aria-label="LinkedIn"
             className={`p-5 rounded-xl border ${currentTheme.card} ${currentTheme.border}
             hover:scale-110 hover:text-blue-600 transition duration-300`}>
             <FaLinkedin size={36} />
           </a>
           <a
-            href="LINK_GITHUB_ANDA"
+            href="https://github.com/KadekLiantini"
             target="_blank"
-            rel="noopener noreferrer"
+            rel=" "
             aria-label="GitHub"
             className={`p-5 rounded-xl border ${currentTheme.card} ${currentTheme.border}
             hover:scale-110 hover:text-gray-600 dark:hover:text-gray-500 transition duration-300`}>
             <FaGithub size={36} />
           </a>
           <a
-            href="LINK_INSTAGRAM_ANDA"
+            href="https://www.instagram.com/aggacrochet_?igsh=MTI0bGRpZ3Y5dm1hNA=="
             target="_blank"
-            rel="noopener noreferrer"
+            rel=""
             aria-label="Instagram"
             className={`p-5 rounded-xl border ${currentTheme.card} ${currentTheme.border}
             hover:scale-110 hover:text-pink-500 transition duration-300`}>
