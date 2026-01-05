@@ -229,10 +229,19 @@ const KeputusanTeknis = () => {
       <section>
         <SectionTitle>Referensi</SectionTitle>
         <p className="text-lg leading-relaxed">
-          Keputusan teknis merupakan fondasi penting dalam pembangunan sistem
-          teknologi informasi. Dengan mempertimbangkan analisis risiko serta
-          aspek sosial dan etis, organisasi dapat membangun sistem yang aman,
-          berkelanjutan, dan dipercaya oleh pengguna.
+          Shahrzadi, L., Mansouri, A., Alavi, M., & Shabani, A. (2024). Causes,
+          consequences, and strategies to deal with information overload: A
+          scoping review. International Journal of Information Management Data
+          Insights, 4(2), 100261.
+        </p>
+        <p className="text-lg leading-relaxed">
+          Analisis keputusan. (n.d.). Analisis keputusan [Presentasi]. Scribd.{" "}
+          <a
+            className="underline"
+            href="https://id.scribd.com/presentation/377905684/ANALISIS-KEPUTUSAN
+">
+            https://id.scribd.com/presentation/377905684/ANALISIS-KEPUTUSAN
+          </a>
         </p>
       </section>
     </div>
