@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../context/ThemeContext";
 import { useEffect } from "react";
-import grafik from "../assets/risk-matrix.png";
+// import grafik from "../assets/risk-matrix.png";
 
 const SectionTitle = ({ children }) => (
   <h2 className="text-3xl font-bold mb-6 mt-12 border-b-2 pb-2 inline-block border-current">
@@ -73,11 +73,6 @@ const KeputusanTeknis = () => {
           </ul>
         </div>
 
-        <p className="mb-6 italic opacity-80">
-          📌 Ilustrasi Konsep: Keputusan Teknis → Implementasi Sistem → Dampak
-          Teknis, Ekonomi, Sosial, dan Hukum
-        </p>
-
         <div className="overflow-x-auto">
           <table
             className={`w-full text-left rounded-lg overflow-hidden ${currentTheme.card}`}>
@@ -122,9 +117,9 @@ const KeputusanTeknis = () => {
           </table>
         </div>
 
-        <p className="mt-4 opacity-70 italic">
+        {/* <p className="mt-4 opacity-70 italic">
           <img src={grafik} className="w-full " alt="" />
-        </p>
+        </p> */}
       </section>
 
       <section id="analisis-risiko">
@@ -136,7 +131,7 @@ const KeputusanTeknis = () => {
           teknis sebelum keputusan tersebut diimplementasikan.
         </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols gap-6">
           <div className={`p-6 rounded-xl ${currentTheme.card}`}>
             <h3 className="text-xl font-bold mb-4">Langkah Analisis Risiko</h3>
             <ol className="list-decimal ml-5 space-y-2">
@@ -148,7 +143,7 @@ const KeputusanTeknis = () => {
             </ol>
           </div>
 
-          <div
+          {/* <div
             className={`p-6 rounded-xl text-center ${currentTheme.primary} text-white`}>
             <h4 className="text-2xl font-bold mb-4">Risk Matrix</h4>
             <p className="font-bold">
@@ -157,7 +152,7 @@ const KeputusanTeknis = () => {
             <p className="mt-2">
               Likelihood Sedang + Impact Rendah = Tolerable
             </p>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -223,6 +218,16 @@ const KeputusanTeknis = () => {
 
       <section>
         <SectionTitle>Kesimpulan</SectionTitle>
+        <p className="text-lg leading-relaxed">
+          Keputusan teknis merupakan fondasi penting dalam pembangunan sistem
+          teknologi informasi. Dengan mempertimbangkan analisis risiko serta
+          aspek sosial dan etis, organisasi dapat membangun sistem yang aman,
+          berkelanjutan, dan dipercaya oleh pengguna.
+        </p>
+      </section>
+
+      <section>
+        <SectionTitle>Referensi</SectionTitle>
         <p className="text-lg leading-relaxed">
           Keputusan teknis merupakan fondasi penting dalam pembangunan sistem
           teknologi informasi. Dengan mempertimbangkan analisis risiko serta
